@@ -1,20 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - Print all possible combinations of single digit numbers
- * Return: Always 0 (Success)
+ * main - main block
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
+ * Return: 0
  */
 int main(void)
 {
-	int number;
-	for (number = 0; number <= 9; number++)
+	int c = 0;
+
+	while (c < 10)
 {
-	putchar(number + '0');
-	if (number < 9)
-}
+	putchar(48 + c);
+	if (c != 9)
+{
 	putchar(',');
 	putchar(' ');
 }
+	c++;
 }
 	putchar('\n');
 	return (0);
