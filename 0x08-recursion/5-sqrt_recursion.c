@@ -6,17 +6,17 @@
  * Return: evaluate sqrt
  */
 
-int _evaluate(int 1, int n)
+int _evaluate(int i, int n)
 {
 	/*Evaluate function*/
 	if (n == 0 || n == 1)
 		return (n);
 
-	else if (1 * 1 < n)
+	else if (i * i < n)
 		return (_evaluate(i + 1, n));
 
-	else if (1 * 1 == n) /*Condiction base*/
-		return (1);
+	else if (i * i == n) /*Condiction base*/
+		return (i);
 
 	return (-1);
 
